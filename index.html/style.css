@@ -9,9 +9,6 @@ body {
   text-align: right;
   margin: 0;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: background-color 0.4s ease;
 }
 
 .container {
@@ -37,7 +34,6 @@ section {
   transition:
     box-shadow 0.3s ease,
     transform 0.3s ease;
-  cursor: default;
 }
 
 section:hover {
@@ -49,9 +45,6 @@ h2, h3, h4 {
   font-weight: 700;
   color: #004d99;
   margin-top: 0;
-  letter-spacing: 0.06em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  transition: color 0.4s ease;
 }
 
 h2 {
@@ -76,25 +69,17 @@ p {
   margin: 14px 0;
   line-height: 1.65;
   color: #333;
-  text-shadow: 0 0 1px rgba(0,0,0,0.03);
 }
 
 ol {
   margin: 20px 50px;
   padding-left: 20px;
   color: #222;
-  font-weight: 500;
 }
 
 li {
   margin: 12px 0;
   line-height: 1.6;
-  position: relative;
-}
-
-li::marker {
-  font-weight: 700;
-  color: #0059b3;
 }
 
 .lang-toggle {
@@ -115,9 +100,7 @@ li::marker {
     background 0.4s ease,
     box-shadow 0.4s ease,
     transform 0.2s ease;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  user-select: none;
+  margin-left: 10px;
 }
 
 .lang-toggle button:hover {
@@ -137,9 +120,6 @@ li::marker {
 body.show-en {
   direction: ltr;
   text-align: left;
-  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
-  color: #111;
-  transition: background-color 0.4s ease;
 }
 
 body.show-en .ar {
@@ -148,4 +128,41 @@ body.show-en .ar {
 
 body.show-en .en {
   display: inline;
+}
+
+/* الوضع المظلم */
+body.dark-mode {
+  background: #121212;
+  color: #ddd;
+}
+
+body.dark-mode .container {
+  background: #1e1e1e;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode section {
+  background: #222;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+  color: #90caf9;
+}
+
+body.dark-mode p,
+body.dark-mode li {
+  color: #ddd;
+}
+
+body.dark-mode .lang-toggle button {
+  background: linear-gradient(135deg, #333, #111);
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .lang-toggle button:hover {
+  background: linear-gradient(135deg, #555, #222);
 }
