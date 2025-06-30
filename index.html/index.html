@@ -2,109 +2,183 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>ملخص حماية البيانات والتشفير</title>
+  <title>حماية البيانات والتشفير</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>👨‍🎓 الطالب: بكر قدورة</h1>
-  </header>
+
+  <div class="lang-toggle">
+    <button onclick="toggleLanguage()">تبديل اللغة</button>
+  </div>
 
   <div class="container">
 
+    <!-- تعريف البيانات -->
     <section>
-      <h2>📊 1. تعريف البيانات</h2>
-      <p>هي معلومات غير معالجة لمعالجة البيانات.</p>
+      <h2>
+        <span class="ar">1️⃣ تعريف البيانات</span>
+        <span class="en">1️⃣ Data Definition</span>
+      </h2>
+      <p class="ar">هي معلومات غير معالجة لمعالجة البيانات.</p>
+      <p class="en">It is unprocessed information for processing data.</p>
 
-      <h3>🚨 تهديدات البيانات</h3>
-      <h4>🌐 خارجية:</h4>
+      <h3>
+        <span class="ar">تهديدات البيانات</span>
+        <span class="en">Data Threats</span>
+      </h3>
+
+      <h4>
+        <span class="ar">خارجيه:</span>
+        <span class="en">External:</span>
+      </h4>
       <ol>
-        <li>🔥 نار</li>
-        <li>⚔️ حرب</li>
-        <li>🌊 طوفان</li>
+        <li><span class="ar">🔥 نار</span> <span class="en">🔥 Fire</span></li>
+        <li><span class="ar">⚔️ حرب</span> <span class="en">⚔️ War</span></li>
+        <li><span class="ar">🌊 طوفان</span> <span class="en">🌊 Flood</span></li>
       </ol>
 
-      <h4>🏠 داخلية:</h4>
+      <h4>
+        <span class="ar">داخلية:</span>
+        <span class="en">Internal:</span>
+      </h4>
       <ol>
-        <li>👨‍💼 موظفون</li>
-        <li>📡 مزودو الخدمة</li>
-        <li>👥 الأفراد</li>
+        <li><span class="ar">👨‍💼 موظفون</span> <span class="en">👨‍💼 Employees</span></li>
+        <li><span class="ar">📡 مزودو الخدمة</span> <span class="en">📡 Service Providers</span></li>
+        <li><span class="ar">👥 الأفراد</span> <span class="en">👥 Individuals</span></li>
       </ol>
     </section>
 
+    <!-- المعلومات -->
     <section>
-      <h2>📈 2. المعلومات</h2>
-      <p>ناتج البيانات المعالجة مما يجعلها ذات مغزى.</p>
+      <h2>
+        <span class="ar">2️⃣ المعلومات</span>
+        <span class="en">2️⃣ Information</span>
+      </h2>
+      <p class="ar">ناتج البيانات المعالجة مما يجعلها ذات مغزى.</p>
+      <p class="en">The output of processed data that makes it meaningful.</p>
     </section>
 
+    <!-- حماية المعلومات الشخصية والتجارية -->
     <section>
-      <h3>🔒 الأسباب التي تدعو إلى حماية المعلومات الشخصية</h3>
+      <h3>
+        <span class="ar">الأسباب لحماية المعلومات الشخصية</span>
+        <span class="en">Reasons to Protect Personal Information</span>
+      </h3>
       <ol>
-        <li>🕵️‍♂️ سرقة</li>
-        <li>💰 الاحتيال</li>
+        <li><span class="ar">🔐 سرقة</span> <span class="en">🔐 Theft</span></li>
+        <li><span class="ar">💳 احتيال</span> <span class="en">💳 Fraud</span></li>
       </ol>
 
-      <h3>🏢 الأسباب التي تدعو إلى حماية المعلومات التجارية</h3>
+      <h3>
+        <span class="ar">الأسباب لحماية المعلومات التجارية</span>
+        <span class="en">Reasons to Protect Commercial Information</span>
+      </h3>
       <ol>
-        <li>💵 حماية المعلومات المالية</li>
-        <li>🚫 إساءة الاستخدام من قبل الشركات المنافسة</li>
-      </ol>
-    </section>
-
-    <section>
-      <h2>🎭 الهندسة الاجتماعية (الخداع)</h2>
-      <h3>⚡ الآثار:</h3>
-      <ol>
-        <li>📥 جمع المعلومات</li>
-        <li>💳 الاحتيال</li>
-        <li>💻 الوصول إلى نظام الحاسوب</li>
-      </ol>
-
-      <h3>🧩 الأساليب المستخدمة للهجمات الاجتماعية</h3>
-      <ol>
-        <li>📞 الخداع الصوتي: vishing (voice)</li>
-        <li>📧 الخداع عبر الإيميل: phishing</li>
-        <li>📱 الخداع عبر الرسائل النصية: smishing (SMS)</li>
-        <li>🧬 تطبيق بكود خبيث: pharming</li>
+        <li><span class="ar">💵 لحماية المعلومات المالية</span> <span class="en">💵 To protect financial information</span></li>
+        <li><span class="ar">🚫 إساءة الاستخدام من الشركات المنافسة</span> <span class="en">🚫 Misuse by competitors</span></li>
       </ol>
     </section>
 
+    <!-- الهندسة الاجتماعية -->
     <section>
-      <h2>🔑 التشفير</h2>
-      <p>تحويل البيانات إلى شيء غير مفهوم.</p>
-      <h3>🔓 فك التشفير:</h3>
-      <p>تحويل الشيء غير المفهوم إلى بيانات.</p>
+      <h2>
+        <span class="ar">🎭 الهندسة الاجتماعية (الخداع)</span>
+        <span class="en">🎭 Social Engineering (Deception)</span>
+      </h2>
 
-      <h3>🗝️ أنواع التشفير:</h3>
+      <h3>
+        <span class="ar">الآثار:</span>
+        <span class="en">Effects:</span>
+      </h3>
       <ol>
-        <li>🔒 خاص</li>
-        <li>🔑 عام</li>
+        <li><span class="ar">📥 جمع المعلومات</span> <span class="en">📥 Gathering information</span></li>
+        <li><span class="ar">💳 الاحتيال</span> <span class="en">💳 Fraud</span></li>
+        <li><span class="ar">💻 الوصول إلى نظام الحاسوب</span> <span class="en">💻 Access to computer systems</span></li>
       </ol>
 
-      <h3>🛡️ أنواع التدابير:</h3>
+      <h3>
+        <span class="ar">الأساليب المستخدمة للهجمات الاجتماعية</span>
+        <span class="en">Methods Used for Social Attacks</span>
+      </h3>
       <ol>
-        <li>🔐 التشفير</li>
-        <li>🔑 كلمات المرور</li>
+        <li><span class="ar">📞 الخداع الصوتي: Vishing</span> <span class="en">📞 Voice deception: Vishing</span></li>
+        <li><span class="ar">📧 الخداع عبر الإيميل: Phishing</span> <span class="en">📧 Email deception: Phishing</span></li>
+        <li><span class="ar">📱 الخداع عبر الرسائل النصية: Smishing</span> <span class="en">📱 SMS deception: Smishing</span></li>
+        <li><span class="ar">🧬 تطبيق بكود خبيث: Pharming</span> <span class="en">🧬 Malicious app: Pharming</span></li>
       </ol>
     </section>
 
+    <!-- التشفير -->
     <section>
-      <h2>📜 الأهداف الرئيسية لقانون حماية البيانات</h2>
-      <p><strong>🧑‍💼 مراقب البيانات:</strong> فرد يتحكم في تلك البيانات الشخصية.</p>
-      <p><strong>🧍‍♂️ موضوع البيانات:</strong> هو شخص يخضع للبيانات الشخصية.</p>
+      <h2>
+        <span class="ar">🔑 التشفير</span>
+        <span class="en">🔑 Encryption</span>
+      </h2>
+      <p class="ar">تحويل البيانات إلى شيء غير مفهوم.</p>
+      <p class="en">Transforming data into an unreadable format.</p>
+
+      <h3>
+        <span class="ar">🔓 فك التشفير:</span>
+        <span class="en">🔓 Decryption:</span>
+      </h3>
+      <p class="ar">تحويل الشيء غير المفهوم إلى بيانات.</p>
+      <p class="en">Transforming unreadable data back to its original form.</p>
+
+      <h3>
+        <span class="ar">أنواع التشفير</span>
+        <span class="en">Types of Encryption</span>
+      </h3>
+      <ol>
+        <li><span class="ar">🔒 خاص</span> <span class="en">🔒 Private</span></li>
+        <li><span class="ar">🔑 عام</span> <span class="en">🔑 Public</span></li>
+      </ol>
+
+      <h3>
+        <span class="ar">أنواع التدابير</span>
+        <span class="en">Types of Measures</span>
+      </h3>
+      <ol>
+        <li><span class="ar">🛡️ التشفير</span> <span class="en">🛡️ Encryption</span></li>
+        <li><span class="ar">🔑 كلمات المرور</span> <span class="en">🔑 Passwords</span></li>
+      </ol>
     </section>
 
+    <!-- قانون حماية البيانات -->
     <section>
-      <h2>💻 تكنولوجيا المعلومات</h2>
-      <p>هي كل شيء يخص استخدام الأنظمة الحاسوبية والبرمجيات والشبكات لمعالجة وتخزين ونقل المعلومات.</p>
+      <h2>
+        <span class="ar">📜 الأهداف الرئيسية لقانون حماية البيانات</span>
+        <span class="en">📜 Main Goals of Data Protection Law</span>
+      </h2>
+      <p><span class="ar">🧑‍💼 مراقب البيانات: فرد يتحكم في تلك البيانات الشخصية.</span> <span class="en">🧑‍💼 Data Controller: A person who controls personal data.</span></p>
+      <p><span class="ar">🧍‍♂️ موضوع البيانات: شخص يخضع للبيانات الشخصية.</span> <span class="en">🧍‍♂️ Data Subject: A person whose personal data is processed.</span></p>
+    </section>
 
-      <h3>✅ أهم الإرشادات للاستخدامات:</h3>
+    <!-- تكنولوجيا المعلومات -->
+    <section>
+      <h2>
+        <span class="ar">💻 تكنولوجيا المعلومات</span>
+        <span class="en">💻 Information Technology</span>
+      </h2>
+      <p class="ar">هي كل شيء يخص استخدام الأنظمة الحاسوبية والبرمجيات والشبكات لمعالجة وتخزين ونقل المعلومات.</p>
+      <p class="en">It covers the use of computer systems, software, and networks to process, store, and transfer information.</p>
+
+      <h3>
+        <span class="ar">✅ أهم الإرشادات للاستخدامات:</span>
+        <span class="en">✅ Key Usage Guidelines:</span>
+      </h3>
       <ol>
-        <li>🛡️ مراجعة إعدادات برامج الحماية على الإنترنت</li>
-        <li>📑 مراجعة سياسة الخصوصية</li>
+        <li><span class="ar">🛡️ مراجعة إعدادات برامج الحماية على الإنترنت</span> <span class="en">🛡️ Review online security settings</span></li>
+        <li><span class="ar">📑 مراجعة سياسة الخصوصية</span> <span class="en">📑 Review privacy policies</span></li>
       </ol>
     </section>
 
   </div>
+
+  <script>
+    function toggleLanguage() {
+      document.body.classList.toggle('show-en');
+    }
+  </script>
+
 </body>
 </html>
