@@ -1,62 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
-
 body {
-  font-family: 'Cairo', sans-serif;
-  background: linear-gradient(to right, #e0eafc, #cfdef3);
-  margin: 0;
-  padding: 40px;
+  font-family: 'Tahoma', 'Arial', sans-serif;
+  line-height: 1.8;
   direction: rtl;
+  text-align: right;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 40px;
+}
+
+h1, h2, h3, h4 {
+  color: #006699;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h1 {
-  text-align: center;
-  color: #222;
-  margin-bottom: 40px;
-}
-
-.card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  margin-bottom: 30px;
-  padding: 25px;
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
+  font-size: 2em;
+  border-bottom: 2px solid #006699;
+  padding-bottom: 5px;
 }
 
 h2 {
-  color: #2c3e50;
-  margin-top: 0;
+  font-size: 1.8em;
 }
 
 h3 {
-  color: #34495e;
+  font-size: 1.4em;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  background: #f1f1f1;
-  margin-bottom: 8px;
-  padding: 10px;
-  border-radius: 6px;
-  font-size: 16px;
+h4 {
+  font-size: 1.2em;
 }
 
 p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.8;
+  margin: 10px 0;
+  font-size: 1.1em;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
+ol, ul {
+  margin: 10px 40px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 30px 0;
+}
+
+strong {
+  color: #444;
+  font-weight: bold;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+a {
+  color: #006699;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
