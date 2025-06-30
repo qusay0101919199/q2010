@@ -166,3 +166,14 @@ body.dark-mode .lang-toggle button {
 body.dark-mode .lang-toggle button:hover {
   background: linear-gradient(135deg, #555, #222);
 }
+.students {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.students h1 {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
