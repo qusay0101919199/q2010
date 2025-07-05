@@ -17,6 +17,49 @@
     <button onclick="toggleDarkMode()">الوضع المظلم</button>
   </div>
 
+  body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    body.dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    .en { display: none; }
+    body.show-en .ar { display: none; }
+    body.show-en .en { display: inline; }
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="toggleLanguage()">تبديل اللغة</button>
+  <button onclick="toggleDarkMode()">الوضع المظلم</button>
+
+  <h1>
+    <span class="ar">مرحباً بالعالم</span>
+    <span class="en">Hello World</span>
+  </h1>
+
+  <script>
+    function toggleLanguage() {
+      document.body.classList.toggle('show-en');
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+
+</body>
+</html>
+
   <div class="container">
 
     <section>
