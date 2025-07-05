@@ -2,59 +2,31 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>Ethical Hacking</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-      background-color: white;
-      color: black;
-      transition: background-color 0.3s, color 0.3s;
+  <title>Ethical hacking</title>
+  <script>
+    function toggleLanguage() {
+      const isEn = Array.from(document.querySelectorAll('.en')).some(el => el.style.display === 'inline');
+      if (isEn) {
+        // إظهار العربية وإخفاء الإنجليزية
+        document.querySelectorAll('.ar').forEach(el => el.style.display = '');
+        document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
+      } else {
+        // إظهار الإنجليزية وإخفاء العربية
+        document.querySelectorAll('.ar').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.en').forEach(el => el.style.display = 'inline');
+      }
     }
-    .dark-mode {
-      background-color: #121212;
-      color: #eee;
+
+    function toggleDarkMode() {
+      if (document.body.style.backgroundColor === 'black') {
+        document.body.style.backgroundColor = '';
+        document.body.style.color = '';
+      } else {
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+      }
     }
-    header.students {
-      background-color: #f0f0f0;
-      padding: 10px 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-    }
-    header.students h2 {
-      margin: 5px 0;
-    }
-    .lang-toggle {
-      margin-bottom: 20px;
-    }
-    .lang-toggle button {
-      margin-left: 10px;
-      padding: 8px 16px;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      background-color: #007bff;
-      color: white;
-      font-weight: bold;
-    }
-    .lang-toggle button:hover {
-      background-color: #0056b3;
-    }
-    section {
-      margin-bottom: 30px;
-    }
-    h1, h2, h3, h4 {
-      margin-top: 1em;
-      margin-bottom: 0.5em;
-    }
-    ol, ul {
-      padding-inline-start: 40px;
-    }
-    .en {
-      display: none;
-    }
-  </style>
+  </script>
 </head>
 <body>
 
@@ -70,28 +42,14 @@
 
   <div class="container">
 
-    function toggleLanguage() {
-      document.body.classList.toggle('show-en');
-    }
-
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-    }
-  </script>
-
-</body>
-</html>
-
-  <div class="container">
-
     <section>
       <h2>
         <span class="ar">1️⃣ تعريف البيانات</span>
-        <span class="en">1️⃣ Data Definition</span>
+        <span class="en" style="display:none;">1️⃣ Data Definition</span>
       </h2>
       <p class="ar">هي معلومات غير معالجة لمعالجة البيانات.</p>
-      <p class="en">It is unprocessed information used for data processing.</p>
-
+      <p class="en" style="display:none;">It is unprocessed information used for data processing.</p>
+    </section>
       <h3>
         <span class="ar">🔒 تهديدات البيانات</span>
         <span class="en">🔒 Data Threats</span>
