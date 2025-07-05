@@ -5,30 +5,6 @@
 
   <meta charset="UTF-8" />
   <title>Ethical hacking</title>
-  <script>
-    function toggleLanguage() {
-      const isEn = Array.from(document.querySelectorAll('.en')).some(el => el.style.display === 'inline');
-      if (isEn) {
-        // إظهار العربية وإخفاء الإنجليزية
-        document.querySelectorAll('.ar').forEach(el => el.style.display = '');
-        document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
-      } else {
-        // إظهار الإنجليزية وإخفاء العربية
-        document.querySelectorAll('.ar').forEach(el => el.style.display = 'none');
-        document.querySelectorAll('.en').forEach(el => el.style.display = 'inline');
-      }
-    }
-
-    function toggleDarkMode() {
-      if (document.body.style.backgroundColor === 'black') {
-        document.body.style.backgroundColor = '';
-        document.body.style.color = '';
-      } else {
-        document.body.style.backgroundColor = 'black';
-        document.body.style.color = 'white';
-      }
-    }
-  </script>
 </head>
 <body>
 
@@ -51,11 +27,12 @@
       </h2>
       <p class="ar">هي معلومات غير معالجة لمعالجة البيانات.</p>
       <p class="en" style="display:none;">It is unprocessed information used for data processing.</p>
+    <section>
+  <h3>
+    <span class="ar">🔒 تهديدات البيانات</span>
+    <span class="en">🔒 Data Threats</span>
+  </h3>
     </section>
-      <h3>
-        <span class="ar">🔒 تهديدات البيانات</span>
-        <span class="en">🔒 Data Threats</span>
-      </h3>
 
       <h4>
         <span class="ar">🔹 خارجية:</span>
@@ -325,8 +302,12 @@
       <span class="en">Backdoors 🚪🕳️</span>
     </li>
     <li>
-      <span class="ar"> ( تكون مخفية ) برمجيات خبيثة /span>
-      <span class="en">Viruses attached to legitimate programs</span>
+     <span class="ar">( تكون مخفية ) برمجيات خبيثة</span>
+      <span class="en">Hidden malware</span>
+    </li>
+    <li>
+      <span class="ar">( تضيف برامج أخرى ) برامج إضافية</span>
+        <span class="en">Viruses attached to legitimate programs</span>
     </li>
   </ul>
     </section>
@@ -486,11 +467,10 @@
     function toggleLanguage() {
       const isEn = Array.from(document.querySelectorAll('.en')).some(el => el.style.display === 'inline');
       if (isEn) {
-        // إظهار العربية وإخفاء الإنجليزية
         document.querySelectorAll('.ar').forEach(el => el.style.display = '');
         document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
       } else {
-        // إظهار الإنجليزية وإخفاء العربية
+    
         document.querySelectorAll('.ar').forEach(el => el.style.display = 'none');
         document.querySelectorAll('.en').forEach(el => el.style.display = 'inline');
       }
