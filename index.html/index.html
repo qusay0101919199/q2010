@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <script>
-  function toggleLanguage() {
-    const isEn = Array.from(document.querySelectorAll('.en')).some(el => el.style.display === 'inline');
-    if (isEn) {
-      document.querySelectorAll('.ar').forEach(el => el.style.display = '');
-      document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
-    } else {
-      document.querySelectorAll('.ar').forEach(el => el.style.display = 'none');
-      document.querySelectorAll('.en').forEach(el => el.style.display = 'inline');
-    }
-  }
-
-  function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-  }
-</script>
-
-
   <meta charset="UTF-8" />
   <title>Ethical hacking</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    function toggleLanguage() {
+      const isEn = Array.from(document.querySelectorAll('.en')).some(el => el.style.display === 'inline');
+      if (isEn) {
+        document.querySelectorAll('.ar').forEach(el => el.style.display = '');
+        document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
+      } else {
+        document.querySelectorAll('.ar').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.en').forEach(el => el.style.display = 'inline');
+      }
+    }
+
+    function toggleDarkMode() {
+      const body = document.body;
+      if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        localStorage.setItem('darkMode', 'false');
+      } else {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'true');
+      }
+    }
+
+    window.onload = function() {
+      const darkMode = localStorage.getItem('darkMode');
+      if (darkMode === 'true') {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
+      } else {
+        document.body.classList.add('light-mode');
+        document.body.classList.remove('dark-mode');
+      }
+    };
+  </script>
 </head>
+
 <body>
 
   <header class="students">
@@ -33,51 +53,37 @@
     <button onclick="toggleLanguage()">تبديل اللغة</button>
     <button onclick="toggleDarkMode()">الوضع المظلم</button>
   </div>
-<div class="container">
 
-  <section>
-    <h2>
-      <span class="ar">1️⃣ تعريف البيانات</span>
-      <span class="en" style="display:none;">1️⃣ Data Definition</span>
-    </h2>
-    <p class="ar">هي معلومات غير معالجة لمعالجة البيانات.</p>
-    <p class="en" style="display:none;">It is unprocessed information used for data processing.</p>
-  </section>
-
-  <section>
-    <h2>
-      <span class="ar">🔹 التهديدات الخارجية</span>
-      <span class="en" style="display:none;">🔹 External Threats</span>
-    </h2>
-    <ol>
-      <li><span class="ar">🔥 نار</span> <span class="en" style="display:none;">🔥 Fire</span></li>
-      <li><span class="ar">⚔️ حرب</span> <span class="en" style="display:none;">⚔️ War</span></li>
-      <li><span class="ar">🌊 طوفان</span> <span class="en" style="display:none;">🌊 Flood</span></li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>
-      <span class="ar">🔹 التهديدات الداخلية</span>
-      <span class="en" style="display:none;">🔹 Internal Threats</span>
-    </h2>
-    <ol>
-      <li><span class="ar">👨‍💼 موظفون</span> <span class="en" style="display:none;">👨‍💼 Employees</span></li>
-      <li><span class="ar">📡 مزودو الخدمة</span> <span class="en" style="display:none;">📡 Service Providers</span></li>
-      <li><span class="ar">👥 الأفراد</span> <span class="en" style="display:none;">👥 Individuals</span></li>
-    </ol>
-  </section>
-
-</div>
-
+  <div class="container">
 
     <section>
-      <h2>
-        <span class="ar">2️⃣ المعلومات</span>
-        <span class="en">2️⃣ Information</span>
-      </h2>
+      <h2><span class="ar">1️⃣ تعريف البيانات</span><span class="en" style="display:none;">1️⃣ Data Definition</span></h2>
+      <p class="ar">هي معلومات غير معالجة لمعالجة البيانات.</p>
+      <p class="en" style="display:none;">It is unprocessed information used for data processing.</p>
+    </section>
+
+    <section>
+      <h2><span class="ar">🔹 التهديدات الخارجية</span><span class="en" style="display:none;">🔹 External Threats</span></h2>
+      <ol>
+        <li><span class="ar">🔥 نار</span> <span class="en" style="display:none;">🔥 Fire</span></li>
+        <li><span class="ar">⚔️ حرب</span> <span class="en" style="display:none;">⚔️ War</span></li>
+        <li><span class="ar">🌊 طوفان</span> <span class="en" style="display:none;">🌊 Flood</span></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2><span class="ar">🔹 التهديدات الداخلية</span><span class="en" style="display:none;">🔹 Internal Threats</span></h2>
+      <ol>
+        <li><span class="ar">👨‍💼 موظفون</span> <span class="en" style="display:none;">👨‍💼 Employees</span></li>
+        <li><span class="ar">📡 مزودو الخدمة</span> <span class="en" style="display:none;">📡 Service Providers</span></li>
+        <li><span class="ar">👥 الأفراد</span> <span class="en" style="display:none;">👥 Individuals</span></li>
+      </ol>
+    </section>
+    
+    <section>
+      <h2><span class="ar">2️⃣ المعلومات</span><span class="en" style="display:none;">2️⃣ Information</span></h2>
       <p class="ar">ناتج البيانات المعالجة مما يجعلها ذات مغزى.</p>
-      <p class="en">The output of processed data that makes it meaningful.</p>
+      <p class="en" style="display:none;">The output of processed data that makes it meaningful.</p>
     </section>
 
     <section>
